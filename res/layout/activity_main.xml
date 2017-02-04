@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getScreenParameter"
+        android:text="获取屏幕参数"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="100dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_inch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="屏幕英寸："
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_resolution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="屏幕分辨率："
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_statusbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="状态栏高度："
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/tv_ppi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="屏幕PPI："
+            android:textSize="28sp" />
+    </LinearLayout>
+
+</RelativeLayout>
